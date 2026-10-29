@@ -1,17 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 5
 
 int main(void)
 {
-    int score[5];
     int i;
+    int grade[SIZE];
+    printf("5 scores\n");
 
-    score[0]=100;
-    score[1]=90;
-    score[2]=80;
-    score[3]=70;
-    score[4]=60;
-    for(i=0;i<5;i++)
-    printf("score[%d]=%d\n",i,score[i]);
+    for (i=0;i<SIZE;i++)
+    scanf("%d",&grade[i]);
+
+    for(i=0;i<SIZE;i++)
+    printf("grade[%d]=%d\n",i,grade[i]);
+    
 
     return 0;
 }
